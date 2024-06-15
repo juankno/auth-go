@@ -1,29 +1,73 @@
 ## Go-Auth
 
-Este es un proyecto de autenticación en Go. Utiliza varios paquetes y módulos para proporcionar una solución de autenticación completa.
+This is a Go authentication project. It uses various packages and modules to provide a complete authentication solution.
 
-### Estructura del proyecto
-El proyecto tiene la siguiente estructura de directorios y archivos:
+### Project Structure
 
-Dependencias
-Este proyecto utiliza varias dependencias, incluyendo:
+The project has the following directory and file structure:
 
-- `github.com/dgrijalva/jwt-go` para la generación y validación de tokens JWT.
-- `github.com/labstack/echo/v4` para el manejo de solicitudes HTTP y enrutamiento.
-- `gorm.io/gorm` para la persistencia de datos y operaciones de base de datos.
+## Go-Auth
 
-Puede ver todas las dependencias en el archivo `go.sum`.
+This is a Go authentication project. It uses various packages and modules to provide a complete authentication solution.
 
-### Cómo ejecutar el proyecto
-Para ejecutar este proyecto, siga estos pasos:
+### Project Structure
 
-1. Asegúrese de tener Go instalado en su máquina.
-2. Clone este repositorio.
-3. Navegue hasta el directorio del proyecto.
-4. Ejecute `go run cmd/main.go`.
+The project has the following directory and file structure:
 
-### Cómo contribuir
-Si desea contribuir a este proyecto, por favor haga un fork del repositorio, haga sus cambios, y luego envíe un pull request.
+```
+.gitignore
+cmd/
+    main.go
+config/
+    config.go
+controllers/
+    auth_controller.go
+go.mod
+go.sum
+middleware/
+    jwt_middleware.go
+models/
+    user.go
+repository/
+    user_repository.go
+services/
+    auth_service.go
+utils/
+    port.go
+    validations.go
+```
 
-### Licencia
-Este proyecto está licenciado bajo los términos de la licencia MIT.
+Dependencies
+This project uses several dependencies, including:
+
+- `github.com/dgrijalva/jwt-go` for JWT token generation and validation.
+- `github.com/labstack/echo/v4` for HTTP request handling and routing.
+- `gorm.io/gorm` for data persistence and database operations.
+
+You can see all the dependencies in the `go.sum` file.
+
+### How to Run the Project
+
+To run this project, follow these steps:
+
+1. Make sure you have Go installed on your machine.
+2. Clone this repository.
+3. Navigate to the project directory.
+4. Run `go run cmd/main.go`.
+
+### How to Run the Project
+
+To run this project, follow these steps:
+
+1. Make sure you have Go installed on your machine.
+2. Clone this repository.
+3. Navigate to the project directory.
+4. Run `go run cmd/main.go`.
+
+### How to Contribute
+
+If you want to contribute to this project, please fork the repository, make your changes, and then submit a pull request.
+
+### License
+
+This project is licensed under the terms of the MIT license.

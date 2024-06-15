@@ -48,14 +48,6 @@ To run this project, follow these steps:
 3. Navigate to the project directory.
 4. Run `go run cmd/main.go`.
 
-### How to Run the Project
-
-To run this project, follow these steps:
-
-1. Make sure you have Go installed on your machine.
-2. Clone this repository.
-3. Navigate to the project directory.
-4. Run `go run cmd/main.go`.
 
 ### How to Contribute
 

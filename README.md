@@ -46,8 +46,21 @@ To run this project, follow these steps:
 1. Make sure you have Go installed on your machine.
 2. Clone this repository.
 3. Navigate to the project directory.
-4. Run `go run cmd/main.go`.
 
+Install the dependencies.
+```bash
+go get -u ./...
+```
+
+Update the dependencies.
+```bash
+go mod tidy
+```
+
+Run this project.
+```bash
+go run cmd/main.go
+```
 
 ### How to Contribute
 

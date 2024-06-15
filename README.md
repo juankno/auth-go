@@ -1,10 +1,3 @@
-## Go-Auth
-
-This is a Go authentication project. It uses various packages and modules to provide a complete authentication solution.
-
-### Project Structure
-
-The project has the following directory and file structure:
 
 ## Go-Auth
 

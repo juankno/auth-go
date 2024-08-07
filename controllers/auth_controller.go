@@ -45,7 +45,7 @@ func (c *AuthController) Login(ctx echo.Context) error {
 	}
 
 	if err := utils.ValidateStruct(&login); err != nil {
-		return ctx.JSON(http.StatusBadRequest, map[string]string{"error": err.Error()})
+		return ctx.JSON(http.StatusBadRequest, utils.FormatValidationError(err))
 	}
 
 	token, err := c.authService.Login(login.Email, login.Password)

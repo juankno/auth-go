@@ -24,7 +24,7 @@ func (c *AuthController) Register(ctx echo.Context) error {
 	}
 
 	if err := utils.ValidateStruct(user); err != nil {
-		return ctx.JSON(http.StatusBadRequest, map[string]string{"error": err.Error()})
+		return ctx.JSON(http.StatusBadRequest, utils.FormatValidationError(err))
 	}
 
 	if err := c.authService.Register(user); err != nil {

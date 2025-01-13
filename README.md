@@ -1,4 +1,3 @@
-
 ## Go-Auth
 
 This is a Go authentication project. It uses various packages and modules to provide a complete authentication solution.
@@ -15,6 +14,8 @@ config/
     config.go
 controllers/
     auth_controller.go
+docker-compose.yml
+Dockerfile
 go.mod
 go.sum
 middleware/
@@ -30,12 +31,14 @@ utils/
     validations.go
 ```
 
-Dependencies
+### Dependencies
+
 This project uses several dependencies, including:
 
 - `github.com/dgrijalva/jwt-go` for JWT token generation and validation.
 - `github.com/labstack/echo/v4` for HTTP request handling and routing.
 - `gorm.io/gorm` for data persistence and database operations.
+- `github.com/mattn/go-sqlite3` for SQLite database support.
 
 You can see all the dependencies in the `go.sum` file.
 
@@ -43,21 +46,30 @@ You can see all the dependencies in the `go.sum` file.
 
 To run this project, follow these steps:
 
-1. Make sure you have Go installed on your machine.
+1. Make sure you have Go and Docker installed on your machine.
 2. Clone this repository.
 3. Navigate to the project directory.
 
-Install the dependencies.
+#### Using Docker
+
+Build and run the project using Docker Compose:
+```bash
+docker-compose up --build
+```
+
+#### Without Docker
+
+Install the dependencies:
 ```bash
 go get -u ./...
 ```
 
-Update the dependencies.
+Update the dependencies:
 ```bash
 go mod tidy
 ```
 
-Run this project.
+Run the project:
 ```bash
 go run cmd/main.go
 ```

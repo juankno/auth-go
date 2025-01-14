@@ -35,7 +35,7 @@ utils/
 
 This project uses several dependencies, including:
 
-- `github.com/dgrijalva/jwt-go` for JWT token generation and validation.
+- `github.com/golang-jwt/jwt/v4` for JWT token generation and validation.
 - `github.com/labstack/echo/v4` for HTTP request handling and routing.
 - `gorm.io/gorm` for data persistence and database operations.
 - `github.com/mattn/go-sqlite3` for SQLite database support.
@@ -72,6 +72,17 @@ go mod tidy
 Run the project:
 ```bash
 go run cmd/main.go
+```
+
+### How to Run Tests
+
+To run the tests for this project, follow these steps:
+
+1. Make sure you have Go installed on your machine.
+2. Navigate to the project directory.
+3. Run the tests using the following command:
+```bash
+go test ./...
 ```
 
 ### How to Contribute

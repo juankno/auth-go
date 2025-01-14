@@ -3,8 +3,8 @@ module go-auth
 go 1.21.3
 
 require (
-	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/go-playground/validator/v10 v10.24.0
+	github.com/golang-jwt/jwt/v4 v4.5.1
 	github.com/jinzhu/gorm v1.9.16
 	github.com/labstack/echo-jwt/v4 v4.3.0
 	github.com/labstack/echo/v4 v4.13.3
